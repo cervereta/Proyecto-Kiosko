@@ -1,0 +1,26 @@
+* {
+    
+    box-sizing: border-box;
+}
+body {
+    background-image: url("/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
