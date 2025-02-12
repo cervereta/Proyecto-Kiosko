@@ -18,20 +18,29 @@
     
     <title>Kiosco Piruleta</title>
 </head>
+
+
 <body>
     <header>
         <div>
             <img src="/img/piruleta3.png" alt="">
-            <p>Kiosko</p>
-            <p>La Piruleta</p>
+            <p class="parrafo_1">Kiosco La Piruleta </p>
+            <p class="parrafo_2">Tu lugar favorito para los dulces más deliciosos</p>
+            
         </div>
 
     </header>
 
     <main>
         <section class="navbar">
-            <nav>
-                <ul>
+
+            <div class="hamburguesa" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+           
+            <nav class="menu">
+                <ul id="menu">
+                    <li> <i class="fa-solid fa-house"></i></li>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -47,5 +56,12 @@
     <footer>
 
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
