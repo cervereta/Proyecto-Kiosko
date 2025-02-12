@@ -158,21 +158,15 @@ nav ul li a {
         margin: 15px 0;
     }
 
-    .menu ul li a:hover {
-        background-color: #5a67d8; /* Azul suave */
-        border-radius: 5px; /* Bordes redondeados */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-        transform: scale(1.1); /* Agrandar ligeramente */
-    }
-
-    /* Icono de casa */
-    .menu ul li i {
-        color: white;
-        font-size: 24px;
-        transition: all 0.3s ease;
-    }
-
-    .menu ul li i:hover {
+    nav ul li i:hover {
         color: #48bb78; /* Verde cálido */
         transform: rotate(360deg); /* Rotación completa */
+    }
+
+    /* Hover para enlaces */
+    nav ul li a:hover {
+        color: #5a67d8; /* Azul suave */
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: scale(1.1);
     }
