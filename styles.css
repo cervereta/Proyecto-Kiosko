@@ -1,13 +1,14 @@
 * {
     
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     background-image: url("/img/fondo2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    padding: 0;
+    
     
 }
 
@@ -15,7 +16,7 @@ body {
     font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 59px;
+    font-size: 53px;
     color: #FFD35E; /* Azul suave */
     text-shadow: 2px 2px 4px #76c0f1f6; /* Sombra ligera */
     letter-spacing: 1px; /* Espaciado entre letras */
@@ -51,9 +52,9 @@ body {
 
 
 
-img{
-    width: 200px;
-    height: 200px;
+.piruleta{
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     
 }
@@ -170,3 +171,121 @@ nav ul li a {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transform: scale(1.1);
     }
+}
+
+/* Estilos para la clase .banner */
+section {
+    display: flex;
+    justify-content: space-around; /* Espacio entre los banners */
+    align-items: center; /* Alineación vertical */
+    flex-wrap: wrap; /* Permite que los banners se apilen en pantallas pequeñas */
+    padding: 20px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #FFD35E;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff3d1;
+    width: 300px; /* Ancho fijo para todos los banners */
+    height: auto; /* Alto fijo para todos los banners */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.banner img {
+    width: 100%; /* Tamaño relativo al tamaño de fuente del documento */
+    height: 10rem;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 20px
+}
+
+.banner h1 {
+    font-size: 28px;
+    color: #314D4A;
+    margin: 0 0 10px 0;
+    font-family: "Lilita One", serif;
+}
+
+.banner p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    font-family: "Lora", serif;
+}
+
+/* Efecto hover para el contenedor */
+.banner:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Apila los banners en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .banner {
+        width: 80%; /* Ocupa más ancho en pantallas pequeñas */
+    }
+
+    footer {
+        margin: auto;
+        padding: 20px;
+        background-color: #314D4A;
+    }
+}
+
+footer {
+    background-color: #314D4A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 26px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+    
+}
+
+footer .social-icons i {
+    font-size: 40px;
+   
+}
+   
+
+footer .social-icons a {
+    color: rgb(253, 247, 69);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a i:hover {
+    color: #FFD35E; /* Cambio de color */
+    transform: scale(1.2) rotate(15deg); /* Escala y rotación */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    background-color: #314D4A; /* Fondo al pasar el ratón */
+    border-radius: 50%; /* Bordes redondeados */
+    opacity: 0.9; /* Ligeramente transparente */
+}
+
