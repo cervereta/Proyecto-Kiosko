@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce la historia de Kiosco La Piruleta y nuestro mensaje para ti.">
+    <meta name="keywords" content="kiosco, piruleta, nosotros, historia, dulces">
+    <meta name="author" content="Kiosco La Piruleta">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51e48c31ae.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kumar+One&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/img/jose.ico" type="image/x-icon">
+    
+    <title>Nosotros - Kiosco La Piruleta</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/img/piruleta3.png" alt="Logo de Kiosco La Piruleta" class="logo">
+            <p class="parrafo_1">Kiosco La Piruleta</p>
+            <p class="parrafo_2">Tu lugar favorito para los dulces más deliciosos</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="navbar">
+            <div class="hamburguesa" onclick="toggleMenu()" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="menu" aria-label="Menú de navegación">
+                <ul id="menu-list">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="content">
+            <h1>Sobre Nosotros</h1>
+            <p>¡Bienvenidos a nuestra dulce historia!</p>
+
+            <div class="about-section">
+                <h2>Nuestra Historia</h2>
+                <p>El Kiosco La Piruleta nació hace más de 10 años en un pequeño rincón del barrio, con un sueño simple: endulzar la vida de quienes nos visitan. Todo empezó con una piruleta gigante que nuestro fundador, José, creó como un regalo para los niños del vecindario. La sonrisa en sus caras fue el comienzo de esta aventura. Hoy, seguimos siendo un lugar lleno de magia, ofreciendo dulces que traen alegría a grandes y pequeños.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Un Mensaje para Ti</h2>
+                <p>En Kiosco La Piruleta no solo vendemos dulces, compartimos momentos. Queremos que cada visita sea un pequeño escape de la rutina, un instante de felicidad envuelto en sabores y colores. Gracias por ser parte de nuestra familia dulce. ¡Esperamos verte pronto para seguir creando recuerdos juntos!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Kiosco La Piruleta. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu-list');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

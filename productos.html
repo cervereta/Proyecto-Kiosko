@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre nuestra variedad de dulces en Kiosco La Piruleta.">
+    <meta name="keywords" content="dulces, kiosco, piruleta, golosinas, productos">
+    <meta name="author" content="Kiosco La Piruleta">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51e48c31ae.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kumar+One&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/img/jose.ico" type="image/x-icon">
+    
+    <title>Productos - Kiosco La Piruleta</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/img/piruleta3.png" alt="Logo de Kiosco La Piruleta" class="logo">
+            <p class="parrafo_1">Kiosco La Piruleta</p>
+            <p class="parrafo_2">Tu lugar favorito para los dulces más deliciosos</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="navbar">
+            <div class="hamburguesa" onclick="toggleMenu()" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="menu" aria-label="Menú de navegación">
+                <ul id="menu-list">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="content">
+            <h1>Nuestros Dulces</h1>
+            <p>Explora nuestra selección de golosinas irresistibles.</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/img/dulce1.jpg" alt="Chocolatina">
+                    <h2>Chocolatina</h2>
+                    <p>Delicioso chocolate con relleno cremoso.</p>
+                </div>
+                <div class="product-card">
+                    <img src="/img/dulce2.jpg" alt="Caramelo">
+                    <h2>Caramelo</h2>
+                    <p>Caramelos duros con sabor a frutas.</p>
+                </div>
+                <div class="product-card">
+                    <img src="/img/dulce3.jpg" alt="Gomitas">
+                    <h2>Gomitas</h2>
+                    <p>Gomitas suaves y coloridas.</p>
+                </div>
+                <div class="product-card">
+                    <img src="/img/dulce4.jpg" alt="Piruleta">
+                    <h2>Piruleta</h2>
+                    <p>Clásica piruleta de sabores variados.</p>
+                </div>
+                <div class="product-card">
+                    <img src="/img/dulce5.jpg" alt="Chicle">
+                    <h2>Chicle</h2>
+                    <p>Chicles refrescantes con sabor intenso.</p>
+                </div>
+                <div class="product-card">
+                    <img src="/img/dulce6.jpg" alt="Regaliz">
+                    <h2>Regaliz</h2>
+                    <p>Tiras de regaliz dulce y salado.</p>
+                </div>
+                <div class="product-card">
+                    <img src="/img/dulce7.jpg" alt="Regaliz">
+                    <h2>Cacahuetes</h2>
+                    <p>Cacahuetes saladitos.</p>
+                </div>
+                <div class="product-card">
+                    <img src="/img/dulce8.jpg" alt="Regaliz">
+                    <h2>Altramuces</h2>
+                    <p>Altramuces buenos para acompañar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Kiosco La Piruleta. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu-list');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
